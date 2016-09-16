@@ -1,0 +1,41 @@
+/* LAYOUT */
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 1000px;
+	margin: 15px auto 0;
+	overflow: hidden;	
+}
+
+.layout-header {
+	width: 100%;
+	float: left;	
+}
+
+.content-wrapper {
+	margin: 20px 0;
+	width: 100%;
+	float: left;
+
+	.layout-main {
+		width: 600px;
+		float: left;
+		@include border-radius(4px);
+		padding: 25px 30px;
+		background-color: #fff;		
+	}
+
+	.layout-sidebar {
+		width: 380px;
+		float: right;
+		@include border-radius(4px);
+		padding: 25px 30px;	
+
+		h3 {
+			margin: 0 0 20px 0;
+		}	
+	}
+}
+

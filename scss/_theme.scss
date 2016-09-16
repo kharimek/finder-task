@@ -1,0 +1,48 @@
+/* THEME */
+
+.btn.btn-primary {
+	background-color: $lightblue;
+	color: #fff;
+}
+
+header {	
+	border-bottom-color: $darkblue;	
+	background-color: $lightblue;
+
+	h1 {		
+		color: #fff;		
+	}
+}
+
+nav {
+	background-color: #fff;
+
+	ul {
+		li {
+			a {				
+				color: $greytext;	
+			}				
+		}
+	}
+}
+
+.layout-main {
+	background-color: #fff;	
+
+	h2 {
+		color: $lightblue;
+	}	
+}
+
+.layout-sidebar {		
+	background-color: #fff;
+
+	h3 {
+		color: $lightblue;			
+	}	
+
+	.image-of-the-week {
+		border-bottom-color: #ccc;
+	}
+}
+

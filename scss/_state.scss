@@ -1,0 +1,25 @@
+/* STATES */
+
+.btn.btn-primary:hover {
+	background-color: darken($lightblue, 10%);
+}
+
+nav {
+	ul {
+		li {
+			a {	
+				&:hover {
+					background: $darkblue;
+					color: #fff;
+				}
+			}				
+
+			&.active {
+				a {
+					background: $darkblue;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

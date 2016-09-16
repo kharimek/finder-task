@@ -1,0 +1,20 @@
+/* MODULE - IMAGE OF THE WEEK */ 
+
+.image-of-the-week {
+	width: 100%;
+	float: left;
+	padding-bottom: 20px;
+	margin: 0 0 20px 0;
+	border-bottom: 2px solid;
+
+	figure {
+		width: 100%;
+		float: left;
+		margin: 0 0 5px 0;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

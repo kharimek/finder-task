@@ -1,0 +1,14 @@
+/* MIXINS */
+
+/* REM Fallback */
+@mixin font-size($sizeValue: 12 ){
+  font-size: $sizeValue + px; //fallback for old browsers
+  font-size: (0.1 * $sizeValue) + rem;
+}
+
+/* Border radius */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+}
