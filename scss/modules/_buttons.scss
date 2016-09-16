@@ -9,3 +9,19 @@
 	display: inline-block;
 	@extend .transition;
 }
+
+.rwd-menu {
+	background: transparent url('../images/menu-button.svg') center center no-repeat;
+	background-size: 20px 20px;
+	border: 2px solid;
+	@include border-radius(4px);
+	@include font-size(18);
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 50px;
+	height:	40px;
+	margin: 10px 0;
+	cursor: pointer;
+	outline: none;
+	display: none;
+}

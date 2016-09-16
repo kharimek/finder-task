@@ -1,15 +1,21 @@
 $(document).ready(function() {
 
-	//"MORE QUOTES"
-	$.getJSON("js/quotes.json", function(data) {
-		console.log(typeof data);
+	//GET MORE QUOTES
+	$('.quote-of-the-week .btn').on('click', function getMoreQuotes(e) {
+		e.preventDefault();
+		$.getJSON("js/quotes.json", function(data) {
+			jQuery.each(data, function(val) {
+				$('<blockquote><p>' + data[val].quote + '</p><footer>' + data[val].author + '</footer></blockquote>').insertAfter('.quote-of-the-week blockquote:last-of-type');
+				$('.quote-of-the-week .btn').remove();
+			});
+		});	
+	});
 
-		jQuery.each(data, function(val) {
-			console.log(val);
-		})
-
-
+	// RWD MENU SLIDE TOGGLE
+	$('.rwd-menu').on('click', function(){
+		$(this).next().slideToggle();
 	})
 
 
 })
+

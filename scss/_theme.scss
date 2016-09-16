@@ -5,12 +5,19 @@
 	color: #fff;
 }
 
+.rwd-menu {
+	color: $darkblue;
+	border-color: currentColor;
+}
+
 header {	
 	border-bottom-color: $darkblue;	
 	background-color: $lightblue;
 
 	h1 {		
-		color: #fff;		
+		a {
+			color: #fff;		
+		}
 	}
 }
 

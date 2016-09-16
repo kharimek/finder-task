@@ -11,5 +11,27 @@ header {
 		position: relative;
 		top: 40%;
 		margin: 0;
+
+		a {
+			text-decoration: none;		
+		}
+	}
+}
+
+// MEDIA QUERIES
+@media (max-width: 768px) {
+	header {
+		h1 {			
+			top: 35%;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	header {
+		h1 {
+			@include font-size(30);
+			top: 25%;
+		}
 	}
 }

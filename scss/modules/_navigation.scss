@@ -33,3 +33,28 @@ nav {
 		}
 	}
 }
+
+// MEDIA QUERIES
+@media (max-width: 768px) {
+	nav {
+		text-align: center;
+
+		.rwd-menu {
+			display: inline-block;
+		}
+
+		ul {
+			padding: 0;
+			display: none;
+
+			li {
+				width: 100%;
+
+				a {
+					@include border-radius(0px);
+				}
+			}
+		}
+	}
+}
+
